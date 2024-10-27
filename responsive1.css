@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: blue;
+    color: white;
+    height: 8vh;
+  }
+  nav .links {
+    display: flex;
+  }
+
+  .links p {
+    padding: 10px;
+  }
+
+  .mobile-menu {
+    color: white;
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 60vh;
+    width: 70vw;
+    background-color: blue;
+  }
+
+  #mobile-menu-btn {
+    display: none;
+  }
+
+  @media (max-width: 576px) {
+    #mobile-menu-btn {
+        display: block;
+      }
+      nav p {
+        display: none;
+      }
+      .mobile-menu {
+        
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
